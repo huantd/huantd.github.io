@@ -37,3 +37,12 @@ p {
     margin-left: -0.36em;
     margin-right: -0.15em;
 }
+
+img {
+    height: 90pt;
+}
+
+td {
+    vertical-align: bottom;
+    padding-right: 10pt;
+}
