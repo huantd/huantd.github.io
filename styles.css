@@ -46,3 +46,9 @@ td {
     vertical-align: bottom;
     padding-right: 7pt;
 }
+
+img.animated-gif {
+    width: 25px;
+    height: auto;
+    margin-top: 1pt;
+}
