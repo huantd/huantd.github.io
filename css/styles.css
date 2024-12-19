@@ -28,8 +28,7 @@ html {
 
 /* Header */
 .header {
-    background-color: #ACAF50;
-    background-color: #008080;
+    background-color: #444
     color: white;
     text-align: left;
     padding: 0px;
@@ -89,7 +88,7 @@ html {
 
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: #444;
     color: white;
     text-align: center;
     padding: 10px 0;
