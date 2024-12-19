@@ -1,98 +1,63 @@
-/* General Reset */
-body,
-html {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.container {
-    display: flex;
-    min-height: 100vh;
-}
+        .menu {
+            display: flex;
+            justify-content:left;
+            background-color: #333;
+            padding: 5px 0;
+            margin: 0;
+            list-style: none;
+        }
 
-.tex sub,
-.latex sub,
-.latex sup {
-    text-transform: uppercase;
-    vertical-align: 0.4ex;
-}
+        .menu a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 5px;
+            text-align: center;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
 
-.tex sub,
-.latex sub {
-    vertical-align: -0.2ex;
-    margin-left: -0.1667em;
-    margin-right: -0.1em;
-}
+        .menu a:hover {
+            background-color: #575757;
+        }
 
-/* Header */
-.header {
-    background-color: #444
-    color: white;
-    text-align: left;
-    padding: 0px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    text-indent: 30px;
-}
+        header {
+            background-color: #444;
+            color: white;
+            padding: 2px;
+            text-align: left;
+        }
 
-.custom-header {
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
+        footer {
+            background-color: #444;
+            color: white;
+            padding: 2px;
+            text-align: left;
+            margin-top: auto;
+            position: fixed;
+            bottom: 0;        
+        }
 
-/* Vertical Menu */
-.menu {
-    width: 110px;
-    background-color: #333;
-    padding: 0;
-    margin-top: 0px;
-    position: fixed;
-    top: 50px;
-    height: 100vh;
-    overflow-y: auto;
-}
+        main {
+            flex: 1;
+        }
+        
+        .container {
+            display: flex;
+            min-height: 10vh;
+            /*background-color:aliceblue;*/
+        }
 
-.menu ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.menu ul li {
-    margin: 0;
-}
-
-.menu a {
-    display: block;
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.menu a:hover {
-    background-color: #575757;
-}
-
-/* Content */
-.content {
-    flex: 1;
-    margin-left: 120px;
-    padding: 10px;
-    margin-top: 60px;
-    /* To clear the fixed header */
-}
-
-/* Footer */
-.footer {
-    background-color: #444;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+        .content {
+            flex: 1;
+            margin-left: 15px;
+            padding: 10px;
+            margin-top: 10px;
+            max-width: 800px;
+            /*background-color: aliceblue;*/
+        }
+        
