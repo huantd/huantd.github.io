@@ -1,63 +1,63 @@
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-        .menu {
-            display: flex;
-            justify-content:left;
-            background-color: #333;
-            padding: 5px 0;
-            margin: 0;
-            list-style: none;
-        }
+.menu {
+    display: flex;
+    justify-content:left;
+    background-color: #333;
+    padding: 5px 0;
+    margin: 0;
+    list-style: none;
+}
 
-        .menu a {
-            color: white;
-            text-decoration: none;
-            padding: 5px 5px;
-            text-align: center;
-            display: block;
-            transition: background-color 0.3s ease;
-        }
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 5px;
+    text-align: center;
+    display: block;
+    transition: background-color 0.3s ease;
+}
 
-        .menu a:hover {
-            background-color: #575757;
-        }
+.menu a:hover {
+    background-color: #575757;
+}
 
-        header {
-            background-color: #444;
-            color: white;
-            padding: 2px;
-            text-align: left;
-        }
+header {
+    background-color: #444;
+    color: white;
+    padding: 2px;
+    text-align: left;
+}
 
-        footer {
-            background-color: #444;
-            color: white;
-            padding: 2px;
-            text-align: left;
-            margin-top: auto;
-            position: fixed;
-            bottom: 0;        
-        }
+footer {
+    background-color: #444;
+    color: white;
+    padding: 2px;
+    text-align: left;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;        
+}
 
-        main {
-            flex: 1;
-        }
-        
-        .container {
-            display: flex;
-            min-height: 10vh;
-            /*background-color:aliceblue;*/
-        }
+main {
+    flex: 1;
+}
 
-        .content {
-            flex: 1;
-            margin-left: 15px;
-            padding: 10px;
-            margin-top: 10px;
-            max-width: 800px;
-            /*background-color: aliceblue;*/
-        }
-        
+.container {
+    display: flex;
+    min-height: 10vh;
+    /*background-color:aliceblue;*/
+}
+
+.content {
+    flex: 1;
+    margin-left: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    max-width: 800px;
+    /*background-color: aliceblue;*/
+}
+
