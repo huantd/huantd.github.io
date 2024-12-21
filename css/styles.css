@@ -14,7 +14,7 @@ body {
 
 .menu li {
     text-align: left;
-    flex: 0 0 100px; /* Ensure all menu items have the same width */
+    flex: 0 0 85px;  /*Ensure all menu items have the same width */
 }
 .menu a {
     color: white;
