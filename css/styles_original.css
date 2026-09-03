@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between menu items */
+    justify-content:flex-start;
+    background-color: #333;
+    padding: 0px 0px 0px 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu li {
+    text-align: left;
+    /*flex: 0 0 85px;  Ensure all menu items have the same width */
+}
+
+.menu li:first-child a {
+    padding-left: 0; /* Remove left padding for the first item */
+}
+
+.menu a {
+    color: white;
+    text-decoration:none;
+    padding: 4px 4px 4px 7px;
+    text-align:left;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #575757;
+}
+
+header {
+    background-color: #444;
+    color: white;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+}
+
+footer {
+    background-color: #444;
+    color: white;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;        
+}
+
+main {
+    flex: 1;
+}
+
+.container {
+    display: flex;
+    min-height: 10vh;
+    /*background-color:aliceblue;*/
+}
+
+.content {
+    flex: 1;
+    margin-left: 10px;
+    padding: 0px;
+    margin-top: 10px;
+    max-width: 700px;
+    /*background-color: aliceblue;*/
+}
+

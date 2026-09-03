@@ -1,0 +1,226 @@
+/* =========================================================
+   Site layout
+   ========================================================= */
+
+header,
+nav,
+main,
+footer {
+    width: 100%;
+}
+
+header {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+header > h1,
+nav > ul,
+.container,
+footer > p {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header > h1 {
+    margin-bottom: 0;
+    padding: var(--space-5) 0 var(--space-3);
+    font-size: 1.95rem;
+    letter-spacing: -0.02em;
+}
+
+nav {
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+nav > ul,
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-5);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0.72rem;
+    padding-bottom: 0.72rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+nav li,
+.menu li {
+    margin: 0;
+}
+
+nav a,
+.menu a {
+    color: var(--color-text-soft);
+    font-family: var(--font-sans);
+    font-size: 0.86rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+nav a:hover,
+.menu a:hover {
+    color: var(--color-link);
+}
+
+.container {
+    padding-top: var(--space-6);
+    padding-bottom: var(--space-7);
+}
+
+main {
+    min-height: 60vh;
+}
+
+main > * {
+    max-width: var(--reading-width);
+}
+
+footer {
+    margin-top: var(--space-7);
+    background: var(--color-soft);
+    border-top: 1px solid var(--color-border);
+}
+
+footer > p {
+    margin-bottom: 0;
+    padding: var(--space-4) 0;
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   Version 1 Step 2 — Classic header and navigation
+   ========================================================= */
+
+.classic-header {
+    width: 100%;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.classic-header-inner {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin: 0 auto;
+    padding: 1.35rem 0 1rem;
+}
+
+.classic-site-name {
+    display: inline-block;
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1.15;
+    text-decoration: none;
+}
+
+.classic-site-name:hover {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.classic-site-subtitle {
+    display: block;
+    margin-top: 0.25rem;
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    letter-spacing: 0.025em;
+}
+
+.classic-nav {
+    width: 100%;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.classic-nav-inner {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin: 0 auto;
+}
+
+.classic-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.7rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.classic-menu li {
+    margin: 0;
+}
+
+.classic-menu a {
+    position: relative;
+    display: block;
+    padding: 0.78rem 0 0.72rem;
+    color: var(--color-text-soft);
+    font-family: var(--font-sans);
+    font-size: 0.82rem;
+    font-weight: 600;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.classic-menu a:hover {
+    color: var(--color-link);
+    text-decoration: none;
+}
+
+.classic-menu a[aria-current="page"] {
+    color: var(--color-text);
+}
+
+.classic-menu a[aria-current="page"]::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 2px;
+    background: var(--color-link);
+    content: "";
+}
+
+.classic-nav-toggle {
+    display: none;
+    width: 42px;
+    height: 38px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.classic-nav-toggle-line {
+    width: 21px;
+    height: 1px;
+    background: var(--color-text);
+    transition:
+        transform var(--transition-fast),
+        opacity var(--transition-fast);
+}
+
+.classic-nav.is-open .classic-nav-toggle-line:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.classic-nav.is-open .classic-nav-toggle-line:nth-child(2) {
+    opacity: 0;
+}
+
+.classic-nav.is-open .classic-nav-toggle-line:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}

@@ -1,0 +1,80 @@
+/* =========================================================
+   Reusable academic components
+   ========================================================= */
+
+.section-title,
+font[size],
+font[color] {
+    display: block;
+    margin: var(--space-6) 0 var(--space-3);
+    color: var(--color-text);
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: var(--space-5);
+    padding-left: 1.35rem;
+}
+
+li {
+    margin-bottom: var(--space-2);
+}
+
+table {
+    width: 100%;
+    margin: var(--space-4) 0 var(--space-5);
+    border-collapse: collapse;
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+}
+
+th,
+td {
+    padding: 0.6rem 0.7rem;
+    border-top: 1px solid var(--color-border);
+    vertical-align: top;
+    text-align: left;
+}
+
+th {
+    background: var(--color-soft);
+    font-weight: 700;
+}
+
+tr:last-child td {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.note {
+    padding-left: var(--space-3);
+    border-left: 3px solid var(--color-border);
+    color: var(--color-muted);
+    font-size: 0.9rem;
+}
+
+.profile-photo {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+}
+
+.meta,
+.caption,
+small {
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+}
+
+.link-list {
+    margin: var(--space-3) 0 var(--space-5);
+    padding-left: 0;
+    list-style: none;
+}
+
+.link-list li {
+    margin-bottom: var(--space-1);
+}

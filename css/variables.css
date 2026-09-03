@@ -1,0 +1,42 @@
+/* =========================================================
+   Version 1 — Academic Classic
+   Design tokens
+   ========================================================= */
+
+:root {
+    --color-bg: #ffffff;
+    --color-surface: #ffffff;
+    --color-text: #222222;
+    --color-text-soft: #4a4a4a;
+    --color-muted: #6f6f6f;
+    --color-link: #1f4e79;
+    --color-link-hover: #123653;
+    --color-border: #d9d9d9;
+    --color-rule: #c9c9c9;
+    --color-soft: #f7f7f5;
+
+    --font-serif: Georgia, "Times New Roman", Times, serif;
+    --font-sans: Arial, Helvetica, sans-serif;
+    --font-size-xs: 0.78rem;
+    --font-size-sm: 0.88rem;
+    --font-size-base: 1rem;
+    --font-size-md: 1.15rem;
+    --font-size-lg: 1.4rem;
+    --font-size-xl: 2rem;
+
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.5rem;
+    --space-6: 2rem;
+    --space-7: 3rem;
+    --space-8: 4rem;
+
+    --container-width: 980px;
+    --reading-width: 760px;
+
+    --radius-sm: 2px;
+    --radius-md: 4px;
+    --transition-fast: 140ms ease;
+}

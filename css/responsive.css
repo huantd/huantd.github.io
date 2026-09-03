@@ -1,0 +1,131 @@
+/* =========================================================
+   Responsive behavior
+   ========================================================= */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+    }
+
+    header > h1,
+    nav > ul,
+    .menu,
+    .container,
+    footer > p {
+        width: min(calc(100% - 28px), var(--container-width));
+    }
+
+    header > h1 {
+        padding-top: var(--space-4);
+        font-size: 1.7rem;
+    }
+
+    nav > ul,
+    .menu {
+        gap: var(--space-3);
+        overflow-x: auto;
+        flex-wrap: nowrap;
+    }
+
+    nav a,
+    .menu a {
+        white-space: nowrap;
+    }
+
+    .container {
+        padding-top: var(--space-5);
+        padding-bottom: var(--space-6);
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14.5px;
+    }
+
+    header > h1 {
+        font-size: 1.55rem;
+    }
+
+    nav a,
+    .menu a {
+        font-size: 0.82rem;
+    }
+}
+
+
+/* Version 1 Step 2 — Classic navigation responsive */
+@media (max-width: 700px) {
+    .classic-header-inner,
+    .classic-nav-inner {
+        width: min(calc(100% - 28px), var(--container-width));
+    }
+
+    .classic-header-inner {
+        padding: 1rem 0 0.8rem;
+    }
+
+    .classic-site-name {
+        font-size: 1.65rem;
+    }
+
+    .classic-site-subtitle {
+        max-width: 90%;
+        font-size: 0.72rem;
+        line-height: 1.4;
+    }
+
+    .classic-nav-inner {
+        position: relative;
+    }
+
+    .classic-nav-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .classic-menu {
+        max-height: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        overflow: hidden;
+        border-top: 0 solid var(--color-border);
+        transition:
+            max-height 180ms ease,
+            border-top-width 180ms ease;
+    }
+
+    .classic-nav.is-open .classic-menu {
+        max-height: 320px;
+        border-top-width: 1px;
+    }
+
+    .classic-menu a {
+        padding: 0.8rem 0;
+        border-bottom: 1px solid var(--color-border);
+        font-size: 0.86rem;
+    }
+
+    .classic-menu a[aria-current="page"]::after {
+        display: none;
+    }
+
+    .classic-menu a[aria-current="page"] {
+        color: var(--color-link);
+    }
+}
