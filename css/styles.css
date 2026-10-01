@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+
 /* Version 1 — Academic Classic stylesheet entry point */
 
 @import url("variables.css");
@@ -6,3 +8,4 @@
 @import url("components.css");
 @import url("pages.css");
 @import url("responsive.css");
+@import url("elegant.css");

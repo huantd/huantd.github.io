@@ -1,0 +1,249 @@
+/* =========================================================
+   Elegant refresh — Apple-inspired typography and color
+   Loaded last. Remove the @import line in styles.css to revert.
+   ========================================================= */
+
+:root {
+    --font-elegant: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display",
+        "Inter", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-serif: var(--font-elegant);
+    --font-sans: var(--font-elegant);
+
+    --color-text: #1d1d1f;
+    --color-text-soft: #424245;
+    --color-muted: #6e6e73;
+    --color-link: #0066cc;
+    --color-link-hover: #0071e3;
+    --color-border: #e5e5ea;
+    --color-rule: #d2d2d7;
+    --color-soft: #f5f5f7;
+}
+
+body {
+    font-family: var(--font-elegant);
+    font-size: 17px;
+    line-height: 1.53;
+    letter-spacing: -0.012em;
+    font-feature-settings: "kern", "liga";
+}
+
+/* Headings: semibold, tight tracking */
+h1, h2, h3, h4, h5, h6,
+.classic-site-name,
+.classic-home-name,
+.classic-bio-title,
+.classic-research-title,
+.classic-research-section-title,
+.classic-bio-section-title {
+    font-family: var(--font-elegant);
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.classic-home-name,
+.classic-bio-title,
+.classic-research-title {
+    font-size: clamp(2.1rem, 4.4vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+
+.classic-home-section h2,
+.classic-research-section-title,
+.classic-bio-section-title {
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+}
+
+/* Header and navigation: light, quiet */
+.classic-site-name {
+    font-size: 1.5rem;
+    letter-spacing: -0.025em;
+}
+
+.classic-site-subtitle {
+    font-size: 0.8rem;
+    letter-spacing: 0;
+}
+
+.classic-menu a {
+    font-size: 0.82rem;
+    font-weight: 400;
+    letter-spacing: -0.005em;
+    color: var(--color-text-soft);
+}
+
+.classic-menu a[aria-current="page"] {
+    font-weight: 500;
+}
+
+.classic-menu a[aria-current="page"]::after {
+    height: 1px;
+    background: var(--color-text);
+}
+
+/* Links: regular weight, blue, no heavy bold */
+.classic-contact-list a,
+.classic-home-links a {
+    font-size: 0.94rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.classic-contact-list a::after,
+.classic-home-links a::after {
+    content: " \203A";
+}
+
+/* Supporting text */
+.classic-home-role {
+    font-size: 1.06rem;
+    color: var(--color-text-soft);
+}
+
+.classic-home-summary,
+.classic-home-section p {
+    font-size: 1.06rem;
+    line-height: 1.55;
+}
+
+.classic-bio-intro,
+.classic-research-intro {
+    font-size: 1.06rem;
+    letter-spacing: -0.01em;
+}
+
+/* Soft, rounded photo */
+.classic-portrait {
+    border: 0;
+    border-radius: 18px;
+}
+
+.classic-photo-caption {
+    margin-top: 0.7rem;
+    font-size: 0.78rem;
+}
+
+/* Footer: Apple-style light gray band */
+footer > p {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+}
+
+::selection {
+    background: #d6e6fa;
+}
+
+@media (max-width: 700px) {
+    body {
+        font-size: 16px;
+    }
+
+    .classic-portrait {
+        border-radius: 14px;
+    }
+}
+
+/* Slightly more air in long lists for the sans-serif face */
+.classic-research-list-item,
+.classic-bio-list-item {
+    line-height: 1.55;
+    margin-bottom: 0.2rem;
+}
+
+/* =========================================================
+   Thinner strokes — light body text, lighter headings
+   ========================================================= */
+
+body {
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6,
+.classic-site-name,
+.classic-research-section-title,
+.classic-bio-section-title {
+    font-weight: 500;
+}
+
+.classic-home-name,
+.classic-bio-title,
+.classic-research-title {
+    font-weight: 300;
+    letter-spacing: -0.035em;
+}
+
+.classic-home-section h2,
+.classic-research-section-title,
+.classic-bio-section-title {
+    font-weight: 400;
+}
+
+strong,
+b,
+.classic-research-list-item strong,
+.classic-research-list-item b,
+.classic-research-list-item a b {
+    font-weight: 500;
+}
+
+.classic-menu a,
+.classic-contact-list a,
+.classic-home-links a,
+.classic-site-subtitle {
+    font-weight: 300;
+}
+
+.classic-menu a[aria-current="page"] {
+    font-weight: 400;
+}
+
+/* Keep small text crisp: don't go lighter than regular below ~13px */
+footer > p,
+.classic-photo-caption,
+.classic-research-section-note {
+    font-weight: 400;
+}
+
+/* Links take the weight of the surrounding text */
+.classic-research-list-item a,
+.classic-bio-list-item a,
+.classic-research-section-note a,
+.classic-publication-list .journal-citation,
+.classic-publication-list .pub-link,
+.classic-activities-list a {
+    font-weight: inherit;
+}
+
+/* =========================================================
+   One size smaller overall (everything scales with these)
+   ========================================================= */
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-size: 16px;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 14.5px;
+    }
+
+    body {
+        font-size: 15px;
+    }
+}
+
+/* Menu keeps its previous size (not reduced with the rest) */
+.classic-menu a {
+    font-size: 13.1px;
+}
+
+@media (max-width: 700px) {
+    .classic-menu a {
+        font-size: 13.8px;
+    }
+}

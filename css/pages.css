@@ -575,8 +575,11 @@
     font-weight: 400;
 }
 
-.classic-publication-list .journal-citation b,
-.classic-publication-list .journal-citation strong {
+/* Bold text inside a link (e.g. volume numbers) keeps the link color */
+.classic-research-list-item a b,
+.classic-research-list-item a strong,
+.classic-bio-list-item a b,
+.classic-bio-list-item a strong {
     color: inherit;
     font-weight: 700;
 }
@@ -585,4 +588,68 @@
 /* Supplemental publication links */
 .classic-publication-list .pub-link {
     font-weight: 400;
+}
+
+
+/* =========================================================
+   Polish pass — shared refinements
+   ========================================================= */
+
+.classic-photo-caption {
+    max-width: 210px;
+    margin: var(--space-2) 0 0;
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-xs);
+    line-height: 1.45;
+}
+
+.classic-research-list-item a {
+    font-weight: 400;
+}
+
+.classic-research-section-title {
+    margin-top: var(--space-5);
+}
+
+.classic-research-section-note {
+    margin: 0 0 var(--space-3);
+    color: var(--color-muted);
+    font-family: var(--font-sans);
+    font-size: var(--font-size-sm);
+}
+
+.classic-research-list {
+    margin-bottom: var(--space-2);
+}
+
+.pub-note {
+    margin: var(--space-2) 0 var(--space-3) var(--space-2);
+    padding-left: var(--space-3);
+    border-left: 3px solid var(--color-border);
+    color: var(--color-text-soft);
+    font-size: var(--font-size-sm);
+    line-height: 1.55;
+}
+
+.classic-activities-list > li {
+    margin-bottom: var(--space-3);
+}
+
+.classic-activities-list ul {
+    margin: var(--space-1) 0 0;
+}
+
+.classic-activities-list ul li {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .classic-photo-caption {
+        max-width: 150px;
+    }
+}
+
+.content > .classic-research-masthead + * {
+    margin-top: var(--space-5);
 }
